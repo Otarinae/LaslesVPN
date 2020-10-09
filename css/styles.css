@@ -244,9 +244,10 @@ ul {
   margin-right: 10px;
 }
 
-.pricing {
+.pricing-location {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
   background: linear-gradient(
     180deg,
     #f8f8f8 -45.04%,
@@ -300,7 +301,7 @@ ul {
   border-color: #f53838;
 }
 
-.pricing__plan h3 {
+.pricing__plan > h3 {
   margin-top: 30px;
 }
 
@@ -343,4 +344,46 @@ ul {
   color: #f53838;
   border: 2px solid #f53838;
   font-weight: bold;
+}
+
+.location__inner {
+  width: 1140px;
+  display: flex;
+  flex-direction: column;
+  margin-top: 150px;
+}
+
+.location__inner > h2 {
+  text-align: center;
+}
+
+.location__text {
+  margin-top: 20px;
+  color: #4f5665;
+  line-height: 30px;
+  text-align: center;
+}
+
+.location__text > span {
+  font-weight: 500;
+}
+
+.location__inner > img {
+  margin-top: 155px;
+}
+
+.location__partners {
+  margin-top: 35px;
+  height: 210px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.location__partners-company {
+  width: 190px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
