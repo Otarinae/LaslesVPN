@@ -182,6 +182,8 @@ ul {
   font-size: 20px;
   margin-left: 35px;
   line-height: 30px;
+  display: flex;
+  flex-direction: column;
 }
 
 .about__cards > div > span {
@@ -192,7 +194,6 @@ ul {
 
 .about__line {
   height: 125px;
-  width: 0px;
   width: 2px;
   background-color: #eeeff2;
 }
@@ -271,15 +272,17 @@ ul {
   color: #4f5665;
   line-height: 30px;
   text-align: center;
+  width: 555px;
+  align-self: center;
 }
 
-.pricing__under-plan {
+.pricing__wrapper {
   display: flex;
   justify-content: center;
   margin-top: 60px;
 }
 
-.pricing__under-plan > .pricing__plan:not(:last-child) {
+.pricing__wrapper > .pricing__plan:not(:last-child) {
   margin-right: 50px;
 }
 
@@ -355,6 +358,8 @@ ul {
 
 .location__inner > h2 {
   text-align: center;
+  width: 380px;
+  align-self: center;
 }
 
 .location__text {
@@ -362,6 +367,8 @@ ul {
   color: #4f5665;
   line-height: 30px;
   text-align: center;
+  width: 555px;
+  align-self: center;
 }
 
 .location__text > span {
@@ -386,4 +393,92 @@ ul {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.testimonials {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+}
+
+.testimonials__inner {
+  width: 1140px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.testimonials__inner > h2 {
+  text-align: center;
+  width: 450px;
+  align-self: center;
+}
+
+.testimonials__text {
+  margin-top: 20px;
+  color: #4f5665;
+  line-height: 30px;
+  text-align: center;
+  width: 555px;
+  align-self: center;
+}
+
+.testimonials__wrapper {
+  margin-top: 60px;
+  display: flex;
+}
+
+.testimonials__customer {
+  height: 230px;
+  min-width: 400px;
+  padding: 30px;
+  border: 2px solid #ddd;
+  border-radius: 10px;
+  box-sizing: border-box;
+}
+
+.testimonials__wrapper > .testimonials__customer:not(:last-child) {
+  margin-right: 50px;
+}
+
+.testimonials__customer-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.testimonials__customer-avatar {
+  display: flex;
+  align-items: center;
+}
+
+.testimonials__customer-text {
+  margin-left: 20px;
+  font-weight: 500;
+  font-size: 18px;
+  display: flex;
+  flex-direction: column;
+}
+
+.testimonials__customer-text > span {
+  font-weight: normal;
+  font-size: 14px;
+  margin-top: 5px;
+  color: #4f5665;
+}
+
+.testimonials__customer-star {
+  display: flex;
+  align-items: center;
+}
+
+.testimonials__customer-star > img {
+  margin-left: 10px;
+}
+
+.testimonials__customer-bottom {
+  margin-top: 10px;
+  line-height: 30px;
+  display: flex;
+  align-items: center;
 }
