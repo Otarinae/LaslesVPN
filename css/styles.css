@@ -435,6 +435,12 @@ ul {
   border: 2px solid #ddd;
   border-radius: 10px;
   box-sizing: border-box;
+  transition: all 0.2s ease-in-out;
+}
+
+.testimonials__customer:hover {
+  box-shadow: 0px 20px 54px 0px rgba(13, 16, 37, 0.06);
+  border-color: #f53838;
 }
 
 .testimonials__wrapper > .testimonials__customer:not(:last-child) {
