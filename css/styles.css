@@ -102,9 +102,14 @@ ul {
   font-weight: bold;
 }
 
-.header__nav > a {
+.header__nav-link {
   color: #4f5665;
   text-decoration: none;
+  transition: all 0.2s ease-in-out;
+}
+
+.header__nav-link:hover {
+  color: #0b132a;
 }
 
 .header__nav > a:not(:last-child) {
