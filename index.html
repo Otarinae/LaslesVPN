@@ -13,16 +13,16 @@
   <body>
     <header class="header">
       <div class="header__inner">
-        <a class="header__logo" href="index.html">
+        <a class="logo" href="index.html">
           <img src="img/logo.svg" alt="logo" />
-          <span class="header__logo-medium">Lasles</span>
-          <span class="header__logo-bold">VPN</span>
+          <span class="logo-medium">Lasles</span>
+          <span class="logo-bold">VPN</span>
         </a>
         <div class="header__nav">
-          <a class="header__nav-link" href="">About</a>
-          <a class="header__nav-link" href="">Features</a>
-          <a class="header__nav-link" href="">Pricing</a>
-          <a class="header__nav-link" href="">Testimonials</a>
+          <a class="header__nav-link" href="#about">About</a>
+          <a class="header__nav-link" href="#features">Features</a>
+          <a class="header__nav-link" href="#pricing">Pricing</a>
+          <a class="header__nav-link" href="#testimonials">Testimonials</a>
           <a class="header__nav-link" href="">Help</a>
         </div>
         <div class="header__account">
@@ -33,6 +33,7 @@
     </header>
 
     <main class="main">
+      <a id="about"></a>
       <div class="about">
         <div class="about__inner">
           <div class="about__top">
@@ -74,6 +75,7 @@
           </div>
         </div>
       </div>
+      <a id="features"></a>
       <div class="features">
         <div class="features__inner">
           <img src="img/features-human.svg" alt="happy human" />
@@ -107,6 +109,7 @@
           </div>
         </div>
       </div>
+      <a id="pricing"></a>
       <div class="pricing-location">
         <div class="pricing__inner">
           <h2>Choose Your Plan</h2>
@@ -210,23 +213,34 @@
           <img src="img/location-map.svg" alt="map" />
           <div class="location__partners">
             <div class="location__partners-company">
-              <img src="img/location-netflix.png" alt="netflix" />
+              <a href="https://www.netflix.com/" target="_blank">
+                <img src="img/location-netflix.png" alt="netflix" />
+              </a>
             </div>
             <div class="location__partners-company">
-              <img src="img/location-reddit.png" alt="reddit" />
+              <a href="https://www.reddit.com/" target="_blank">
+                <img src="img/location-reddit.png" alt="reddit" />
+              </a>
             </div>
             <div class="location__partners-company">
-              <img src="img/location-amazon.png" alt="amazon" />
+              <a href="https://www.amazon.com/" target="_blank">
+                <img src="img/location-amazon.png" alt="amazon" />
+              </a>
             </div>
             <div class="location__partners-company">
-              <img src="img/location-discord.png" alt="discord" />
+              <a href="https://www.discord.com/" target="_blank">
+                <img src="img/location-discord.png" alt="discord" />
+              </a>
             </div>
             <div class="location__partners-company">
-              <img src="img/location-spotify.png" alt="spotify" />
+              <a href="https://www.spotify.com/" target="_blank">
+                <img src="img/location-spotify.png" alt="spotify" />
+              </a>
             </div>
           </div>
         </div>
       </div>
+      <a id="testimonials"></a>
       <div class="testimonials">
         <div class="testimonials__inner">
           <h2>Trusted by Thousands of Happy Customer</h2>
@@ -299,12 +313,88 @@
               <div class="testimonials__scroll-circle"></div>
             </div>
             <div class="testimonials__scroll-right">
-              <div class="testimonials__scroll-arrowleft"></div>
-              <div class="testimonials__scroll-arrowright"></div>
+              <div class="testimonials__scroll-arrow">
+                <img src="img/testimonials-left.svg" alt="arrow" />
+              </div>
+              <div
+                class="testimonials__scroll-arrow testimonials__scroll-arrow--inv"
+              >
+                <img src="img/testimonials-right.svg" alt="arrow" />
+              </div>
             </div>
+          </div>
+          <div class="testimonials__subscribe">
+            <div>
+              <h2>
+                Subscribe Now for <br />
+                Get Special Features!
+              </h2>
+              <p class="testimonials__subscribe-text">
+                Let's subscribe with us and find the fun
+              </p>
+            </div>
+            <button class="btn btn--square">Subscribe Now</button>
           </div>
         </div>
       </div>
     </main>
+    <footer>
+      <div class="footer__inner">
+        <div class="footer__column">
+          <a class="logo" href="index.html">
+            <img src="img/logo.svg" alt="logo" />
+            <span class="logo-medium">Lasles</span>
+            <span class="logo-bold">VPN</span>
+          </a>
+          <p class="footer__text">
+            <span>LaslesVPN</span> is a private virtual network that has unique
+            features and has high security
+          </p>
+          <div class="footer__links">
+            <a href="https://www.facebook.com/" target="_blank">
+              <img src="img/footer-facebook.svg" alt="facebook" />
+            </a>
+            <a href="https://twitter.com/" target="_blank">
+              <img src="img/footer-twitter.svg" alt="twitter" />
+            </a>
+            <a href="https://www.instagram.com/ " target="_blank">
+              <img src="img/footer-instagram.svg" alt="instagram" />
+            </a>
+          </div>
+          <p class="footer__year">©2020Lasles<span>VPN</span></p>
+        </div>
+        <div class="footer__nav">
+          <div class="footer__column">
+            <ul class="footer__list">
+              <p>Product</p>
+              <li><a href="">Download</a></li>
+              <li><a href="">Pricing</a></li>
+              <li><a href="">Locations</a></li>
+              <li><a href="">Server</a></li>
+              <li><a href="">Countries</a></li>
+              <li><a href="">Blog</a></li>
+            </ul>
+          </div>
+          <div class="footer__column">
+            <ul class="footer__list">
+              <p>Engage</p>
+              <li><a href="">LaslesVPN?</a></li>
+              <li><a href="">FAQ</a></li>
+              <li><a href="">Tutorials</a></li>
+              <li><a href="">About Us</a></li>
+              <li><a href="">Privacy Policy</a></li>
+              <li><a href="">Terms of Service</a></li>
+            </ul>
+          </div>
+          <div class="footer__column">
+            <ul class="footer__list">
+              <p>Earn Money</p>
+              <li><a href="">Affiliate</a></li>
+              <li><a href="">Become Partner</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
